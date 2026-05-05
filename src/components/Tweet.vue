@@ -1,6 +1,7 @@
 <script setup>
 import ProfileImage from "./ProfileImage.vue";
 import User from "./User.vue";
+import Timestamp from "./Timestamp.vue";
 const props = defineProps({
   tweet: Object,
 });
@@ -14,7 +15,8 @@ const props = defineProps({
       <div class="top">
         <User :userData="props.tweet.user.name" />
 
-        <span class="timestamp">{{ props.tweet.timestamp }}</span>
+       <Timestamp :timestamp="props.tweet.timestamp" />
+
       </div>
 
       <p class="message">
