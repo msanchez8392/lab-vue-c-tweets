@@ -1,6 +1,6 @@
 <script setup>
 const props = defineProps({
-  userData: String,
+  userData: Object,
 });
 </script>
 <template>
