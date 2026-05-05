@@ -15,7 +15,7 @@ const props = defineProps({
 
     <div class="body">
       <div class="top">
-        <User :userData="props.tweet.user.name" />
+        <User :userData="props.tweet.user" />
 
        <Timestamp :timestamp="props.tweet.timestamp" />
 

@@ -1,12 +1,12 @@
 <script setup>
 const props = defineProps({
-  userData:String,
+  userData: String,
 });
 </script>
 <template>
-<span class="user">
-  <span class="name"> {{ props.userData }}</span>
-  <span class="handle">@{{ props.userData }}</span>
-</span>
+  <span class="user">
+    <span class="name">{{ props.userData.name }}</span>
+    <span class="handle">@{{ props.userData.handle }}</span>
+  </span>
 </template>
 <style></style>
